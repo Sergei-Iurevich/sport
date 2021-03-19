@@ -15,7 +15,7 @@ module.exports = {
       {
         // https://webpack.js.org/loaders/css-loader/
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
     ],
   },
