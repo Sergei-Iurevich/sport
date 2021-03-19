@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 module.exports = {
     mode: "production",
@@ -22,7 +23,21 @@ module.exports = {
         compress: true,
         port: 9000,
     },
-    plugins: [new HtmlWebpackPlugin({
-        template: './src/index.html'
-    })],
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        }),
+        new BrowserSyncPlugin(
+            {
+                // browse to http://localhost:3000/ during development
+                host: "localhost",
+                port: 3000,
+                // proxy the Webpack Dev Server endpoint
+                // (which should be serving on http://localhost:3100/)
+                // through BrowserSync
+                proxy: "http://localhost:9000/",
+            })
+
+
+    ],
 };
