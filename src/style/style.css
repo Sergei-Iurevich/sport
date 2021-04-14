@@ -1,0 +1,164 @@
+.clearfix::after,
+.header::after,
+.page__columns::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.375;
+  background-repeat: round;
+  background-attachment: fixed;
+}
+
+.page {
+  position: relative;
+  z-index: 10;
+  max-width: 1180px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.page__row-static {
+  position: sticky;
+  top: 0;
+}
+
+.page__row-dynamic {
+  margin: 0 2%;
+}
+
+.header {
+  background-color: #000;
+}
+
+.name-site {
+  font-weight: 400;
+  font-size: 1.15rem;
+  color: white;
+  text-decoration: none;
+}
+
+.header__logo {
+  float: left;
+}
+
+.header__name-site {
+  float: right;
+  margin-right: 1%;
+  margin-top: 1.5%;
+}
+
+.nav {
+  font-weight: 400;
+  font-size: 0.895rem;
+  background-color: #ccc;
+}
+
+.link {
+  text-decoration: underline;
+  color: #000;
+}
+
+.link:hover {
+  color: #f44336;
+}
+
+.nav__link {
+  text-decoration: none;
+  padding-left: 1%;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page__columns {
+  margin-top: 10px;
+}
+
+.col1 {
+  float: left;
+  width: 17%;
+}
+
+.col3 {
+  float: right;
+  width: 20%;
+}
+
+.col2 {
+  float: left;
+  width: 63%;
+}
+
+.news {
+  font-weight: 300;
+  font-size: 0.88rem;
+  margin-right: 7%;
+}
+
+.news__link {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 3%;
+}
+
+.section {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.section__link {
+  display: inline-block;
+  width: 300px;
+  margin-right: 70px;
+  vertical-align: top;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.section__img {
+  display: inline-block;
+  width: 200px;
+}
+
+.part__img {
+  width: 90%;
+}
+
+.footer {
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__col {
+  margin: 10px 0;
+}
+
+.footer__link {
+  display: block;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 0.89rem;
+  color: white;
+}
+
+.footer__h {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: white;
+}
