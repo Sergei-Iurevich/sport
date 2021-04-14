@@ -16,8 +16,6 @@ body {
   color: #000;
   font-size: 1rem;
   line-height: 1.375;
-
-  /* background-image: url("../media/images/background.webp"); */
   background-repeat: round;
   background-attachment: fixed;
 }
@@ -30,12 +28,12 @@ body {
   margin: 0 auto;
 }
 
-.page__row--static {
+.page__row-static {
   position: sticky;
   top: 0;
 }
 
-.page__row--dynamic {
+.page__row-dynamic {
   margin: 0 2%;
 }
 
